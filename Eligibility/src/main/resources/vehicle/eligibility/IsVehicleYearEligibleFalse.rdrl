@@ -1,0 +1,11 @@
+package vehicle.eligibility;
+
+import java.lang.Number;
+
+rule "IsVehicleYearEligibleFalse"
+	dialect "mvel"
+	when
+		ivye : IsVehicleYearEligible( vehicleYear > 8 )
+	then
+		ivye.setIsVehicleYearEligible( false );
+end

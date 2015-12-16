@@ -1,0 +1,11 @@
+package vehicle.eligibility;
+
+import java.lang.Number;
+
+rule "InitialToleranceCheckTwo"
+	dialect "mvel"
+	when
+		it : InititalTolerace( ( total_Income >= 1100 && samezip == true && ( isJoint == true || isJoint == false ))|| total_Income >= 2000 )
+	then
+		it.setEligible( true );
+end

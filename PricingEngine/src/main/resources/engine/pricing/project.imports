@@ -1,0 +1,13 @@
+<configuration>
+  <imports>
+    <imports>
+      <import>
+        <type>engine.pricing.Tier</type>
+      </import>
+      <import>
+        <type>engine.pricing.Input</type>
+      </import>
+    </imports>
+  </imports>
+  <version>1.0</version>
+</configuration>
